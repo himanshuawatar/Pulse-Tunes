@@ -227,55 +227,44 @@ input[type="range"] {
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
-    padding: 10px;
+    height: auto;
+  }
+
+  .left-content, .right-content {
+    width: 100%;
+  }
+
+  .button {
+    grid-template-columns: 1fr;
   }
 
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
   }
 
   ul {
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
-    padding-left: 0;
   }
 
-  .left-content {
-    display: block;
-    margin-top: 20px;
-    width: 100%;
+  #theme-toggle {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .music img {
+    max-height: 150px;
   }
 
-  .your-library h3,
-  .create-playlist h3,
-  .create-playlist p,
-  .create-playlist button {
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  .create-playlist button {
-    padding: 12px;
-    font-size: 16px;
-  }
-
-  .right-content {
-    width: 100%;
-  }
-
-  .music-card {
+  .btn {
     width: 100%;
   }
 
   .play-button {
-    width: 100%;
-  }
-
-  .footer {
-    padding: 15px 10px;
+    padding: 6px 10px;
+    font-size: 0.9rem;
   }
 }
+
