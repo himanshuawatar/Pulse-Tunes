@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+              <div class="logo">
+                <img id="image-logo" src="./Assests/logo.svg" alt="logo" />
+             <h2>Pulse Tunes</h2>
+            </div>
+          <ul>
+             <li><a href="#">Overview</a></li>
+             <li><a href="#">Music</a></li>
+             <li><a href="#">Video</a></li>
+             <li><a href="#">Gift Cards</a></li>
+         </ul>
+        </div>
+        </nav>
+    </header>
+
+<div class="main">
+        <div class="left-content">
+            <section class="your-library"><h3>Your Library</h3>
+            </section>
+
+            <section class="create-playlist">
+                <h3>Create your first playlist</h3>
+                <p style="font-size: smaller; margin-top: 5px;">It's easy, we'll help you</p>
+                <button>
+                    <h4><em>Create playlist</em></h4>
+                </button>
+            </section>
+
+            <div class="button">
+
+                <div>
+                    <a href="#trending"><button class="btn"><h4><em>Trending Songs</em></h4></button></a>
+                </div>
+                <div>
+                   <a href="#hindi"> <button  class="btn"><h4><em>Hindi Songs</em></h4></button></a>
+                </div>
+                <div>
+                    <a href="#punjabi"><button  class="btn"><h4><em>Punjabi Songs</em></h4></button></a>
+                </div>
+                <div>
+                    <a href="#english"><button  class="btn"><h4><em>English Songs</em></h4></button></a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    <div class="right-content">
+
+        <div class="Trending-song" id="trending">
+                <h3 class="Trend">Trending Songs</h2>
+            <div class="music">
+                <div class="music-1">
+                    <img src="./Assests/I guess image.jpg" id="image">
+
+                    <div class="play">
+                        
+                        <audio id="audio1" src="Assests/I Guess.mp3"></audio>
+
+                        <button data-audio-id="audio1" class="play-button" onclick="togglePlay('audio1')">Play/Pause</button>
+                        <input type="range" id="slider-audio1" value="0" min="0" step="1" onchange="seekAudio('audio1', this)">
+                    </div>
+                </div>
+
+                <div class="music-2">
+                    <img src="./Assests/aam jahe image.jpg" id="image">
+
+                    <div class="play">
+                        <audio id="audio2" src="Assests/Aam Jahe Munde.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio2" onclick="togglePlay('audio2')">Play/Pause</button>
+                        <input type="range" id="slider-audio2" value="0" min="0" step="1" onchange="seekAudio('audio2', this)">
+                    </div>
+                </div>
+
+                <div class="music-3">
+                    <img src="./Assests/russian image.jpg" id="image">
+                    
+                    
+                    <div class="play">
+                        <audio id="audio3" src="Assests/Russian Bandana.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio3" onclick="togglePlay('audio3')">Play/Pause</button>
+                        <input type="range" id="slider-audio3" value="0" min="0" step="1" onchange="seekAudio('audio3', this)">
+                    </div>
+
+                </div>
+
+                <div class="music-4">
+                    <img src="./Assests/payal image.jpg" id="image">
+
+                    <div class="play">
+                        <audio id="audio4"  src="Assests/PAYAL SONG.mp3"></audio>
+                        <button class="play-button"   data-audio-id="audio4" onclick="togglePlay('audio4')">Play/Pause</button>
+                        <input type="range" id="slider-audio4" value="0" min="0" step="1" onchange="seekAudio('audio4', this)">
+                    </div>
+                    
+                </div>
+
+                <div class="music-5">
+                    <img src="./Assests/sapphire image.jpg" id="image">
+                   
+
+                    <div class="play">
+                        <audio id="audio5"  src="Assests/Sapphire.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio5" onclick="togglePlay('audio5')">Play/Pause</button>
+                        <input type="range" id="slider-audio5" value="0" min="0" step="1" onchange="seekAudio('audio5', this)">
+                    </div>
+                </div>
+
+                <div class="music-6">
+                    <img src="./Assests/sapphire image.jpg" id="image">
+                   
+
+                    <div class="play">
+                        <audio id="audio5"  src="Assests/Sapphire.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio5" onclick="togglePlay('audio5')">Play/Pause</button>
+                        <input type="range" id="slider-audio5" value="0" min="0" step="1" onchange="seekAudio('audio5', this)">
+                    </div>
+                </div>
+            </div>    
+    </div>
+
+        <div class="Hindi-song" id="hindi">
+                <h3 class="Trend">Hindi Songs</h2>
+            <div class="music">
+                <div class="music-1">
+                    <img src="./Assests/I guess image.jpg" id="image">
+
+                    <div class="play">
+                        
+                        <audio id="audio1" src="Assests/I Guess.mp3"></audio>
+
+                        <button data-audio-id="audio1" class="play-button" onclick="togglePlay('audio1')">Play/Pause</button>
+                        <input type="range" id="slider-audio1" value="0" min="0" step="1" onchange="seekAudio('audio1', this)">
+                    </div>
+                </div>
+
+                <div class="music-2">
+                    <img src="./Assests/aam jahe image.jpg" id="image">
+
+                    <div class="play">
+                        <audio id="audio2" src="Assests/Aam Jahe Munde.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio2" onclick="togglePlay('audio2')">Play/Pause</button>
+                        <input type="range" id="slider-audio2" value="0" min="0" step="1" onchange="seekAudio('audio2', this)">
+                    </div>
+                </div>
+
+                <div class="music-3">
+                    <img src="./Assests/russian image.jpg" id="image">
+                    
+                    
+                    <div class="play">
+                        <audio id="audio3" src="Assests/Russian Bandana.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio3" onclick="togglePlay('audio3')">Play/Pause</button>
+                        <input type="range" id="slider-audio3" value="0" min="0" step="1" onchange="seekAudio('audio3', this)">
+                    </div>
+
+                </div>
+
+                <div class="music-4">
+                    <img src="./Assests/payal image.jpg" id="image">
+
+                    <div class="play">
+                        <audio id="audio4"  src="Assests/PAYAL SONG.mp3"></audio>
+                        <button class="play-button"   data-audio-id="audio4" onclick="togglePlay('audio4')">Play/Pause</button>
+                        <input type="range" id="slider-audio4" value="0" min="0" step="1" onchange="seekAudio('audio4', this)">
+                    </div>
+                    
+                </div>
+
+                <div class="music-5">
+                    <img src="./Assests/sapphire image.jpg" id="image">
+                   
+
+                    <div class="play">
+                        <audio id="audio5"  src="Assests/Sapphire.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio5" onclick="togglePlay('audio5')">Play/Pause</button>
+                        <input type="range" id="slider-audio5" value="0" min="0" step="1" onchange="seekAudio('audio5', this)">
+                    </div>
+                </div>
+
+                <div class="music-6">
+                    <img src="./Assests/sapphire image.jpg" id="image">
+                   
+
+                    <div class="play">
+                        <audio id="audio5"  src="Assests/Sapphire.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio5" onclick="togglePlay('audio5')">Play/Pause</button>
+                        <input type="range" id="slider-audio5" value="0" min="0" step="1" onchange="seekAudio('audio5', this)">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Hindi-song" id="punjabi">
+                <h3 class="Trend">Punjabi Songs</h2>
+            <div class="music">
+                <div class="music-1">
+                    <img src="./Assests/I guess image.jpg" id="image">
+
+                    <div class="play">
+                        
+                        <audio id="audio1" src="Assests/I Guess.mp3"></audio>
+
+                        <button data-audio-id="audio1" class="play-button" onclick="togglePlay('audio1')">Play/Pause</button>
+                        <input type="range" id="slider-audio1" value="0" min="0" step="1" onchange="seekAudio('audio1', this)">
+                    </div>
+                </div>
+
+                <div class="music-2">
+                    <img src="./Assests/aam jahe image.jpg" id="image">
+
+                    <div class="play">
+                        <audio id="audio2" src="Assests/Aam Jahe Munde.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio2" onclick="togglePlay('audio2')">Play/Pause</button>
+                        <input type="range" id="slider-audio2" value="0" min="0" step="1" onchange="seekAudio('audio2', this)">
+                    </div>
+                </div>
+
+                <div class="music-3">
+                    <img src="./Assests/russian image.jpg" id="image">
+                    
+                    
+                    <div class="play">
+                        <audio id="audio3" src="Assests/Russian Bandana.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio3" onclick="togglePlay('audio3')">Play/Pause</button>
+                        <input type="range" id="slider-audio3" value="0" min="0" step="1" onchange="seekAudio('audio3', this)">
+                    </div>
+
+                </div>
+
+                <div class="music-4">
+                    <img src="./Assests/payal image.jpg" id="image">
+
+                    <div class="play">
+                        <audio id="audio4"  src="Assests/PAYAL SONG.mp3"></audio>
+                        <button class="play-button"   data-audio-id="audio4" onclick="togglePlay('audio4')">Play/Pause</button>
+                        <input type="range" id="slider-audio4" value="0" min="0" step="1" onchange="seekAudio('audio4', this)">
+                    </div>
+                    
+                </div>
+
+                <div class="music-5">
+                    <img src="./Assests/sapphire image.jpg" id="image">
+                   
+
+                    <div class="play">
+                        <audio id="audio5"  src="Assests/Sapphire.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio5" onclick="togglePlay('audio5')">Play/Pause</button>
+                        <input type="range" id="slider-audio5" value="0" min="0" step="1" onchange="seekAudio('audio5', this)">
+                    </div>
+                </div>
+
+                <div class="music-6">
+                    <img src="./Assests/sapphire image.jpg" id="image">
+                   
+
+                    <div class="play">
+                        <audio id="audio5"  src="Assests/Sapphire.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio5" onclick="togglePlay('audio5')">Play/Pause</button>
+                        <input type="range" id="slider-audio5" value="0" min="0" step="1" onchange="seekAudio('audio5', this)">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Hindi-song" id="english">
+                <h3 class="Trend">English Songs</h2>
+            <div class="music">
+                <div class="music-1">
+                    <img src="./Assests/I guess image.jpg" id="image">
+
+                    <div class="play">
+                        
+                        <audio id="audio1" src="Assests/I Guess.mp3"></audio>
+
+                        <button data-audio-id="audio1" class="play-button" onclick="togglePlay('audio1')">Play/Pause</button>
+                        <input type="range" id="slider-audio1" value="0" min="0" step="1" onchange="seekAudio('audio1', this)">
+                    </div>
+                </div>
+
+                <div class="music-2">
+                    <img src="./Assests/aam jahe image.jpg" id="image">
+
+                    <div class="play">
+                        <audio id="audio2" src="Assests/Aam Jahe Munde.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio2" onclick="togglePlay('audio2')">Play/Pause</button>
+                        <input type="range" id="slider-audio2" value="0" min="0" step="1" onchange="seekAudio('audio2', this)">
+                    </div>
+                </div>
+
+                <div class="music-3">
+                    <img src="./Assests/russian image.jpg" id="image">
+                    
+                    
+                    <div class="play">
+                        <audio id="audio3" src="Assests/Russian Bandana.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio3" onclick="togglePlay('audio3')">Play/Pause</button>
+                        <input type="range" id="slider-audio3" value="0" min="0" step="1" onchange="seekAudio('audio3', this)">
+                    </div>
+
+                </div>
+
+                <div class="music-4">
+                    <img src="./Assests/payal image.jpg" id="image">
+
+                    <div class="play">
+                        <audio id="audio4"  src="Assests/PAYAL SONG.mp3"></audio>
+                        <button class="play-button"   data-audio-id="audio4" onclick="togglePlay('audio4')">Play/Pause</button>
+                        <input type="range" id="slider-audio4" value="0" min="0" step="1" onchange="seekAudio('audio4', this)">
+                    </div>
+                    
+                </div>
+
+                <div class="music-5">
+                    <img src="./Assests/sapphire image.jpg" id="image">
+                   
+
+                    <div class="play">
+                        <audio id="audio5"  src="Assests/Sapphire.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio5" onclick="togglePlay('audio5')">Play/Pause</button>
+                        <input type="range" id="slider-audio5" value="0" min="0" step="1" onchange="seekAudio('audio5', this)">
+                    </div>
+                </div>
+
+                <div class="music-6">
+                    <img src="./Assests/sapphire image.jpg" id="image">
+                   
+
+                    <div class="play">
+                        <audio id="audio5"  src="Assests/Sapphire.mp3"></audio>
+                        <button class="play-button"  data-audio-id="audio5" onclick="togglePlay('audio5')">Play/Pause</button>
+                        <input type="range" id="slider-audio5" value="0" min="0" step="1" onchange="seekAudio('audio5', this)">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <div class="footer">
+         <div class="credit"><h4>Developed by Himanshu Awatar</h4></div>
+
+         <div class="foot">
+            <p>Spotify ask for Subscription</p>
+            <p>So, I build my Own 😎</p>
+         </div>
+
+    </div>
+       
+
+<script>
+  function togglePlay(audioId) {
+    const audios = document.querySelectorAll("audio");
+    const buttons = document.querySelectorAll(".play-button");
+
+    // Pause all audios and reset buttons
+    audios.forEach(audio => {
+      if (audio.id !== audioId) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    });
+
+    buttons.forEach(btn => {
+      if (btn.getAttribute("data-audio-id") !== audioId) {
+        btn.classList.remove("playing");
+      }
+    });
+
+    const audio = document.getElementById(audioId);
+    const button = document.querySelector(`.play-button[data-audio-id="${audioId}"]`);
+    const slider = document.getElementById("slider-" + audioId);
+
+    if (audio.paused) {
+      audio.play();
+      button.classList.add("playing");
+    } else {
+      audio.pause();
+      button.classList.remove("playing");
+    }
+
+    // Update slider while audio plays
+    audio.ontimeupdate = () => {
+      slider.value = audio.currentTime;
+    };
+
+    // Set slider max when audio is loaded
+    audio.onloadedmetadata = () => {
+      slider.max = audio.duration;
+    };
+  }
+
+  function seekAudio(audioId, slider) {
+    const audio = document.getElementById(audioId);
+    audio.currentTime = slider.value;
+  }
+</script>
+
+
+
+</body>
+</html>
